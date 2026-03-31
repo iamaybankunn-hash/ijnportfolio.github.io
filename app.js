@@ -113,7 +113,7 @@ const PROJECTS = [
 ];
 
 // ─── Typed Text ──────────────────────────────────
-const roles = ['Web Developer', 'Software Developer', 'Graphic Designer', 'Freelancer'];
+const roles = ['Desktop Application Developer', 'Web Developer', 'Graphic Designer', 'Freelancer'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 function typeWriter() {
   const el = document.getElementById('typed-text');
