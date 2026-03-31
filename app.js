@@ -4,13 +4,13 @@
 
 // ─── Data ────────────────────────────────────────
 const SKILLS = [
-  { name: 'VB.Net / Visual Basic', level: 91 },
-  { name: 'Photoshop / Graphic Design', level: 85 },
-  { name: 'MySQL / Database', level: 85 },
+  { name: 'Visual Basic .NET', level: 91 },
+  { name: 'Graphic Design', level: 85 },
+  { name: 'MySQL / Database', level: 80 },
   { name: 'PHP / Laravel', level: 75 },
-  { name: 'HTML / CSS', level: 80 },
-  { name: 'JavaScript', level: 75 },
-  { name: 'Tailwind CSS', level: 75 },
+  { name: 'Tailwind CSS', level: 45 },
+  { name: 'HTML / CSS', level: 78 },
+  { name: 'JavaScript', level: 45 },
 ];
 
 const TIMELINE = [
