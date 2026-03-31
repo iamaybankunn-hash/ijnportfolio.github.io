@@ -80,6 +80,24 @@ const PROJECTS = [
     code: '#'
   },
   {
+    title: 'Barangay Management Information System',
+    desc: 'The Barangay Management Information System is a desktop-based application developed using VB.NET, MySQL, and Crystal Reports. It is designed to streamline the management of barangay records, improve service delivery, and enhance data organization within the barangay office. This system provides a centralized and computerized platform for storing, updating, and retrieving resident information, barangay transactions, and official records. It minimizes manual paperwork, reduces processing time, and ensures accuracy and security of data.',
+    img: 'images/bmis/bmis1.jpg',
+    images: [
+      'images/bmis/bmis1.jpg',
+      'images/bmis/bmis2.jpg',
+      'images/bmis/bmis3.jpg',
+      'images/bmis/bmis4.jpg',
+      'images/bmis/bmis5.jpg',
+      'images/bmis/bmis6.jpg',
+    ],
+    tags: ['VB.Net', 'MySQL', 'WinForms', 'Crystal Reports'],
+    filter: 'vbnet',
+    label: 'VB.Net',
+    color: '#10b981',
+    code: '#'
+  },
+  {
     title: 'Quezon Vaccination Records Management System',
     desc: 'The Quezon Vaccination Records Management System is a desktop-based application developed using VB.NET, MySQL, and Crystal Reports. This system is designed to efficiently manage, store, and generate vaccination records related to COVID-19 within the Municipality/Province of Quezon. The application provides a centralized platform for encoding, tracking, and retrieving vaccination data of individuals.It aims to improve the accuracy, accessibility, and security of health records while reducing manual processes and paperwork.',
     img: 'images/qvr/qvr1.jpg',
@@ -295,9 +313,7 @@ function renderProjects(filter = 'all') {
         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
            <span class="px-4 py-2 bg-sky-500 text-white rounded-full text-xs font-bold shadow-lg">View Details</span>
         </div>
-        <div class="absolute bottom-4 right-4 flex gap-2" onclick="event.stopPropagation()">
-          <a href="${p.code}" target="_blank" aria-label="Source Code" class="w-10 h-10 rounded-full bg-slate-900/40 backdrop-blur flex items-center justify-center text-white hover:bg-sky-500 transition-all border border-white/10"><i class="fa-brands fa-github text-sm"></i></a>
-        </div>
+        <!-- Source code link removed -->
       </div>
       <div class="p-5">
         <h3 class="font-display font-bold dark:text-white text-slate-900 mb-2">${p.title}</h3>
@@ -327,7 +343,7 @@ function openProjectModal(project) {
   document.getElementById('modal-title').textContent = project.title;
   document.getElementById('modal-desc').textContent = project.desc;
   document.getElementById('modal-label').textContent = project.label;
-  document.getElementById('modal-code').href = project.code;
+  // modal-code href update removed
 
   // Fill tags
   const tagsCont = document.getElementById('modal-tags');
